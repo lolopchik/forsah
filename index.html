@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>форсаж</title>
-    <link rel="stylesheet" href="css/index.css">
+    
     <link rel="icon" href="favicon.ico">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/index.css" >
 </head>
 <body>
     <header>
-        <img src="assets/логофорсаж.png" width="200">
+        <img src="assets/logo.png" width="200">
         <div class="start">
             <a href="">вселенная</a>
             <a href="films.html">фильмы</a>
@@ -17,7 +21,8 @@
         </div>
     </header>
     <main>
-        <img src="assets/главная.webp" class="lol">
+        <button id="svet"> чето там</button>
+        <img src="assets/main.webp" class="lol">
         <h1>вселенная</h1>
         <nav class="nav">
             <a href="#pers">главные персонажи</a>
@@ -28,53 +33,273 @@
         <section>
             <h2 id="pers">главные персонажи</h2> <hr>
            <div class="person">
-            <div class="ludi"><img src="assets\персонажи\браян.jpg" class="hoto">Браян О'коннер(Пол Уокер)</div>
-            <div class="ludi"><img src="assets/персонажи/винс.jpg" class="hoto">Винс Кретч(Метт Шульце)</div>
-            <div class="ludi"><img src="assets/персонажи/доминик.webp" class="hoto">Доминник Торетто(Вин Дизель)</div>
-            <div class="ludi"><img src="assets/персонажи/жизель.jpg" class="hoto">Жизель Яшар(Галь Гадот)</div>
-            <div class="ludi"><img src="assets/персонажи/лети.jpg" class="hoto">Летти Ортис(Мишель Родригес)</div>
-            <div class="ludi"><img src="assets/персонажи/люк.jpg" class="hoto">Люк Хоббс(Дуэйн Джонсон)</div>
-            <div class="ludi"><img src="assets/персонажи/миа.jpg" class="hoto">Миа Торетто(Джордана Брюстер)</div>
-            <div class="ludi"><img src="assets/персонажи/рико.jpg" class="hoto">Рико Сантос(Дон Омар)</div>
-            <div class="ludi"><img src="assets/персонажи/роман.jpg" class="hoto">Роман Пирс(Тайриз Гибсон)</div>
-            <div class="ludi"><img src="assets/персонажи/тедж.jpg" class="hoto">Тедж Паркер(Кристофер Бриджес)</div>
-            <div class="ludi"><img src="assets/персонажи/хан.jpg" class="hoto">Хан Лю(Сунг Канг)</div>
-            <div class="ludi"><img src="assets/персонажи/шоу.jpg" class="hoto">Деккард Шоу(Джейсон Стейтем) </div>
-           </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#pol"><img src="assets\person\1.jpg" class="hoto">Браян О'коннер(Пол Уокер)</div>
+            <div class="modal fade" id="pol" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Браян О'коннер(Пол Уокер)</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Брайан — коп под прикрытием. Его задача в первой части заключалась в поимке банды налётчиков, во главе которой стоял Доминик Торетто. Внедрившись в его банду, он проводит расследование, но сам не верит в причастность Дома. Факты же говорят об обратном. В итоге, убедив себя, что Дом и есть тот самый преступник, он решается поймать его, но в конце фильма почему-то отпускает.
+
+Во второй части Брайан появляется в Майами, но его вербует таможенная служба и ФБР для поимки Картера Верона, крупного контрабандиста. Вместе с другом Романом Пирсом О’Коннер внедряется к нему на службу и проворачивает дело, рискуя собственной жизнью. К счастью, ему удаётся спастись самому и спасти Монику Фуэнтес, женщину-агента, работавшую у Верона.
+
+В четвёртой части фильма Брайан работает в ФБР. Его заданием становится поиск крупного наркобарона Артуро Брага. Параллельно Брайану Брагу ищет и Доминик, который хочет отомстить ему за Летти. Они объединяют свои усилия и хватают Брагу. Сам Доминик отправляется в тюрьму.
+
+В пятой части Брайан и Миа Торетто вытаскивают Доминика из тюрьмы, а сами скрываются в Рио-де-Жанейро, где старый друг Винс предлагает им работёнку: нужно угнать машины из поезда. К делу подключается и Доминик. Но они снова влипают в историю. Машина, которую они угнали, принадлежала бразильскому бизнесмену и крупной шишке в Рио Эрнану Рейесу, который затевает поиски угонщиков. Помимо Рейеса Брайана и Доминика разыскивает и специальный агент Люк Хоббс. Тогда Брайан и Дом решаются на своё последнее дело. Они собирают команду, чтобы обчистить Рейеса и «уйти навсегда» в новую жизнь. После долгой подготовки Брайан и Дом, заручившись подмогой друзей и Хоббса, перешедшего на их сторону, увозят сейф Рейеса прямо из полицейского участка. Деньги вся команда делит поровну и расходится. Брайн вместе с Мией поселяется на берегу моря и живёт новой жизнью.
+
+В шестой части у Брайана и Миа рождается ребёнок. Но о тихой жизни они могут забыть. Вновь появляется специальный агент Хоббс, который просит помощи у Доминика и его команды. Брайан готов помочь другу.
+
+В 2013 году погиб актёр Пол Уокер, исполняющий роль Брайана О’Коннера. Роль Брайана в некоторых сценах седьмой части играл младший брат Пола Уокера — Коди. В январе 2014 года создатели картины сообщили, что персонаж Уокера не умрёт на экране, а будет «выведен из франшизы»
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#vins"><img src="assets/person/2.jpg" class="hoto">Винс Кретч(Метт Шульце)</div>
+            <div class="modal fade" id="vins" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Винс Кретч(Метт Шульце)</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Уличный гонщик и друг детства Доминика Торетто. В первой части фильма вместе с Домом участвовал в налётах на грузовики. С появлением в «семье» Брайана стал относиться к нему резко негативно, из-за чего у него возникали размолвки с Торетто. Винс оказался единственным членом банды, который заподозрил за Брайном его двойную игру, но в семье ему не поверили. Во время последнего налёта в финале первого фильма он запрыгнул на грузовик, водитель которого оказался вооружён. Спастись ему помогли Миа и Брайн, вовремя снявшие его с грузовика. От полученных ранений Винс потерял сознание и был доставлен на вертолёте в госпиталь.
+
+В пятой части Винс скрывается от властей США в Бразилии, где у него начинается новая жизнь. Бежавшие после спасения Дома из тюрьмы, Миа и Брайн приходят к Винсу, который предлагает им опасную работу. Это стало поводом его изгнания из команды, так как задание оказалось подставным, и вся команда снова в опасности. Позже Винс помогает Мие скрыться от бандитов Рейеса, за что Дом снова принимает его в команду. Но не успев начать операцию по ограблению Рейеса, Винс вместе с Домом, Брайаном и Мией попадают в руки к Хоббсу. По пути в аэропорт, откуда они должны были быть депортированы в штаты, произошло нападение на бронеавтомобиль Хоббса. В ходе перестрелки Винс получает ранение и умирает. Его сын и жена получают компенсацию от Дома в виде доли от дела.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#dom"><img src="assets/person/3.webp" class="hoto">Доминник Торетто(Вин Дизель)</div>
+            <div class="modal fade" id="dom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Доминник Торетто(Вин Дизель)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Один из главных протагонистов серии, не появившийся только во втором фильме. Доминик — уличный гонщик, глава банды налётчиков. Поиски банды навели на него Брайна О’Коннера, который внедряется в его команду. После того, как Доминик был раскрыт, Брайн отпускает его. Не теряя времени, Дом отправляется на поиски нового прибежища в Латинскую Америку, где заводит новую команду.
+
+В четвёртой части вместе с Летти, своей женой, Доминик крадёт бензин, но его быстро обнаруживают. Он снова скрывается, но весть о гибели Летти заставляет его вернуться в Лос-Анджелес, где он ищет виновных. Поиски приводят его к Артуро Браге, которого ищет и Брайан. Судьба снова заставляет их объединить усилия: они ловят преступника, убивают виновного в смерти Летти, Феникса. Но Дом не бежит от закона, а соглашается предстать перед судом. Несмотря на все надежды, суд приговорил Дома к 25 годам без права на досрочное освобождение.
+
+По дороге в тюрьму автобус с заключёнными преследует три машины — это были Брайан, Миа, Лео и Сантос. Они освободили Доминика и скрылись в Рио, где им представилась возможность "срубить" немного денег. Но друзья снова попадают в неприятность: машина, которую они украли, принадлежала крупной шишке Эрнану Рейесу, который устроил на них охоту. Доминик и Брайан собрали команду и обчистили Рейеса. В третьей части Доминик появляется лишь в конце фильма во время заезда с Шоном.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#hez"><img src="assets/person/4.jpg" class="hoto">Жизель Яшар(Галь Гадот)</div>
+            <div class="modal fade" id="hez" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Жизель Яшар(Галь Гадот)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    В «Форсаже 4» она была одной из помощниц наркобарона Артуро Браги, которая занимается этим только для того, чтобы помочь своей семье. После оставляет его, чтобы помочь Доминику. В пятой части приезжает в Рио и принимает участие в ограблении. По сюжету Яшар сотрудничала с «Моссадом». Также появляется в шестой части. Собиралась уехать в Токио и жить с Ханом, но погибла в конце шестого фильма, спасая его.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#letti"><img src="assets/person/5.jpg" class="hoto">Летти Ортис(Мишель Родригес)</div>
+            <div class="modal fade" id="letty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Летти Ортис(Мишель Родригес)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Летти — жена Доминика Торетто, гонщица. Ей приходится вместе с Домиником скрываться в Латинской Америке, где они оба крадут бензин. В четвёртой части Доминик оставляет её, чтобы не подставлять под удар. Она тем временем связывается с Брайаном и договаривается, что поможет ему раскрыть дело Артуро Браги, если Доминика перестанут преследовать власти. Феникс, правая рука Браги, убивает её, как и всех курьеров, работавших на Брагу, но в пятом фильме выясняется, что она выжила. В шестой части выясняется, что после попытки убийства в четвёртой части, она потеряла память и присоединилась к банде Шоу. В конце 6 фильма Доминик возвращает Летти домой. Как оказывается из 7 части Доминик с Летти женаты.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#luk"><img src="assets/person/6.jpg" class="hoto">Люк Хоббс(Дуэйн Джонсон)</div>
+            <div class="modal fade" id="luk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Люк Хоббс(Дуэйн Джонсон)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#mia"><img src="assets/person/7.jpg" class="hoto">Миа Торетто(Джордана Брюстер)</div>
+            <div class="modal fade" id="mia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#riko"><img src="assets/person/8.jpg" class="hoto">Рико Сантос(Дон Омар)</div>
+            <div class="modal fade" id="riko" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#roman"><img src="assets/person/9.jpg" class="hoto">Роман Пирс(Тайриз Гибсон)</div>
+            <div class="modal fade" id="roman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#tedh"><img src="assets/person/10.jpg" class="hoto">Тедж Паркер(Кристофер Бриджес)</div>
+            <div class="modal fade" id="tedh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#han"><img src="assets/person/11.jpg" class="hoto">Хан Лю(Сунг Канг)</div>
+            <div class="modal fade" id="han" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ludi btn btn-primary" data-bs-toggle="modal" data-bs-target="#dekka"><img src="assets/person/12.jpg" class="hoto">Деккард Шоу(Джейсон Стейтем) </div>
+            <div class="modal fade" id="dekka" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    fkfs
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="films">
             <h2>фильмы</h2>
         <hr>
             <div class="prosmotr">
-                <div class="fil"><img src="assets/фильмы/1.jpg" class="film">1 часть-форсаж</div>
-                <div class="fil"><img src="assets/фильмы/2.jpg" class="film">2 часть-двойной форсаж</div>
-                <div class="fil"><img src="assets/фильмы/3.jpeg" class="film">3 часть-форсаж токийский дрифт </div>
+                <div class="fil"><img src="assets/films/1.jpg" class="film">1 часть-форсаж</div>
+                <div class="fil"><img src="assets/films/2.jpg" class="film">2 часть-двойной форсаж</div>
+                <div class="fil"><img src="assets/films/3.jpeg" class="film">3 часть-форсаж токийский дрифт </div>
             </div>
             <a href="films.html">все фильмы</a>
         </section>
         <section id="games">
             <h2>игры</h2> <hr>
             <div class="games">
-                <div class="game"><img src="assets/игры/1.jpg" class="gam">Fast & Furious Crossroads</div>
-                <div class="game"><img src="assets/игры/2.jpeg" class="gam">Fast & Furious: Showdown</div>
-                <div class="game"><img src="assets/игры/3.jpg" class="gam">Fast & Furious Spy Racers</div>
+                <div class="game"><img src="assets/game/1.jpg" class="gam">Fast & Furious Crossroads</div>
+                <div class="game"><img src="assets/game/2.jpeg" class="gam">Fast & Furious: Showdown</div>
+                <div class="game"><img src="assets/game/3.jpg" class="gam">Fast & Furious Spy Racers</div>
             </div>
             <a href="game.html">все игры</a>
         </section>
         <section id="music">
             <h2>музыка</h2> <hr>
             <div class="music">
-                <div class="musi"><img src="assets/музыка/images.jpg" class="mus">One Shot (feat. Lil Baby)</div>
-                <div class="musi"><img src="assets/музыка/2.jpg" class="mus">No Hay Amor (Arcangel)</div>
-                <div class="musi"><img src="assets/музыка/3.jpg" class="mus">murder remix (feat. 21 savage)</div>
+                <div class="musi"><img src="assets/music/images.jpg" class="mus">One Shot (feat. Lil Baby)</div>
+                <div class="musi"><img src="assets/music/2.jpg" class="mus">No Hay Amor (Arcangel)</div>
+                <div class="musi"><img src="assets/music/3.jpg" class="mus">murder remix (feat. 21 savage)</div>
             </div>
             <em>послушать музыку можно здесь <a href="music.html">вся музыка</a></em>
         </section>
         <hr>
         <section>
-            <a href="https://vk.com/standoffer64" target="_blank"><img class="socicon vk" src="assets/подвал/vk.png" /></a>
-            <a href="https://web.telegram.org/z/#5797948571" target="_blank"><img class="socicon tg" src="assets/подвал/telegram.png" /></a>
-            <p>меня вдохновил какой-то Александр (не знаю его фамилию)</p></section>
+            <a href="https://vk.com/standoffer64" target="_blank"><img class="socicon vk" src="assets/footer/vk.png" /></a>
+            <a href="https://web.telegram.org/z/#5797948571" target="_blank"><img class="socicon tg" src="assets/footer/telegram.png" /></a>
+        </section>
     </main>
     <footer>
     </footer>
