@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>фильмы форсаж</title>
-    <link rel="stylesheet" href="css/films.css">
     <link rel="icon" href="favicon.ico">
+    <script src="./js/films.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/films.css" >
 </head>
 <body>
     <header>
@@ -14,6 +17,8 @@
             <a href="films.html">фильмы</a>
             <a href="game.html">игры</a>
             <a href="music.html">музыка</a>
+            <button id="svet">поменять тему</button>
+
         </div>
     </header>
     <main>
@@ -21,24 +26,213 @@
         <h1>фильмы</h1> <hr>
         <section>
             <div class="film">
-                <div class="fil"><img src="assets/films/1.jpg" class="films"><p>1 часть - форсаж</p></div>
-                <div class="fil"><img src="assets/films/2.jpg" class="films"><p>2 часть - двойной форсаж</p></div>
-                <div class="fil"><img src="assets/films/3.jpeg" class="films"><p>3 часть - форсаж токийский дрифт</p></div>
-                <div class="fil"><img src="assets/films/4.jpeg" class="films"><p>4 часть - форсаж 4</p></div>
-                <div class="fil"><img src="assets/films/5.jpg" class="films"><p>5 часть - форсаж 5: быстрая пятёрка</p></div>
-                <div class="fil"><img src="assets/films/6.jpg" class="films"><p>6 часть - форсаж 6</p></div>
-                <div class="fil"><img src="assets/films/7.webp" class="films"><p>7 часть - форсаж 7: Месть не знает границ</p></div>
-                <div class="fil"><img src="assets/films/8.jpg" class="films"><p>8 часть - форсаж 8</p></div>
-                <div class="fil"><img src="assets/films/10-9.jpg" class="films"><p>9 часть- форсаж: Хоббс и Шоу</p></div>
-                <div class="fil"><img src="assets/films/9.jpg" class="films"><p>10 часть - форсаж 9: вселенная форсаж</p></div>
-        </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f1"><img src="assets/films/1.jpg" class="films"><p>1 часть - форсаж</p></div>
+                <div class="modal fade" id="f1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">1 часть-форсаж</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Его зовут Брайан, и он — фанат турбин и нитроускорителей. Он пытается попасть в автобанду легендарного Доминика Торетто, чемпиона опасных и незаконных уличных гонок. Брайан также полицейский, и его задание — втереться в доверие к Торетто, подозреваемому в причастности к дерзким грабежам грузовиков, совершаемым прямо на ходу.
+                          <p><a href="https://www.kinopoisk.ru/film/666/?utm_referrer=yandex.ru" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f2"><img src="assets/films/2.jpg" class="films"><p>2 часть - двойной форсаж</p></div>
+                <div class="modal fade" id="f2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">2 часть-двойной форсаж</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Бывший полицейский Брайан О`Коннер с напарником Романом Пирсом собирается перевезти крупную сумму грязных денег известного мафиози Картера Верона. Но на самом деле эта работа является только прикрытием для Брайана, который вместе с тайным агентом Моникой Фуэнтес должен уличить изворотливого преступника.
+                          <p><a href="https://www.kinopoisk.ru/film/323/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f3"><img src="assets/films/3.jpeg" class="films"><p>3 часть - форсаж токийский дрифт</p></div>
+                <div class="modal fade" id="f3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">3 часть-форсаж токийский дрифт</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Старшеклассник Шон Босуэлл только и делает, что попадает в неприятности. После очередной выходки — импровизированных гонок и аварии — парню уже светит тюрьма, тогда мать решает отправить его к отцу в Японию. В первый же день в японской школе он знакомится с соотечественником, а тот притаскивает нового друга на подпольные соревнования по дрифт-рейсингу. Тут Шону открывается доселе невиданное искусство прохождения поворотов — и он сразу же ввязывается в спор, с позором проиграв который, оказывается должен местному авторитету по имени Хан.
+                          <p><a href="https://www.kinopoisk.ru/film/106079/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f4"><img src="assets/films/4.jpeg" class="films"><p>4 часть - форсаж 4</p></div>
+                <div class="modal fade" id="f4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">4 часть - форсаж 4</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Когда кривая дорожка заставляет скрывающегося от правосудия Дома Торетто вернуться в Лос-Анджелес, вражда с агентом Брайаном О’Коннером вспыхивает с новой силой. Но у парочки обнаруживается общий противник, и Дому с Брайаном приходится заключить перемирие в надежде одержать над ним победу. Грабя конвои, роя подкопы и пересекая границы, они приходят к идеальной форме отмщения — педали газа, вдавленной до упора.
+                          <p><a href="https://www.kinopoisk.ru/film/395978/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f5"><img src="assets/films/5.jpg" class="films"><p>5 часть - форсаж 5: быстрая пятёрка</p></div>
+                <div class="modal fade" id="f5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">5 часть - форсаж 5: быстрая пятёрка</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Бывший полицейский Брайан О`Коннер вместе с бывалым лихачом Домиником Торетто совсем немного увлеклись жизнью вне закона. После того, как Брайан и Миа Торетто освободили Доминика, они не рискуют долго задерживаться на одном месте, так как являются желанной целью порядком недовольных копов.
+                          <p><a href="https://www.kinopoisk.ru/film/496943/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f6"><img src="assets/films/6.jpg" class="films"><p>6 часть - форсаж 6</p></div>
+                <div class="modal fade" id="f6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">6 часть - форсаж 6</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            После того как Доминик и Брайн побывали в Рио, где они ограбили и свергли империю вора в законе, их команда получила 100 миллионов, и наши герои оказались разбросаны по всему миру. Но их привычка вечно жить в бегах не даёт им покоя. Между тем, Хоббс отслеживал организацию смертельно опасных наёмников-водителей по двенадцати странам. Единственный способ остановить эту криминальную группу — это превзойти их на улицах, поэтому Хоббс просит Доминика собрать его элитную команду в Лондоне. За это он обещает полное помилование для Доминика и его друзей, чтобы они смогли наконец вернуться домой к своей семье.
+                          <p><a href="https://www.kinopoisk.ru/film/594736/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f7"><img src="assets/films/7.webp" class="films"><p>7 часть - форсаж 7: Месть не знает границ</p></div>
+                <div class="modal fade" id="f7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">7 часть - форсаж 7: Месть не знает границ</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Они покорили Токио и Рио, Лос-Анджелес и Лондон. Но мир больше не играет по их правилам. Зной арабских пустынь, неприлично высокие небоскребы, миллионы долларов на колесах и очень, очень знаменитый злодей. Скорость не знает границ.
+                          <p><a href="https://www.kinopoisk.ru/film/754481/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f8"><img src="assets/films/8.jpg" class="films"><p>8 часть - форсаж 8</p></div>
+                <div class="modal fade" id="f8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">8 часть - форсаж 8</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Гавана, Берлин, Нью-Йорк — для самой крутой команды в мире нет ничего невозможного, пока они вместе. Но когда на их пути оказывается красотка и по совместительству королева киберпреступности Сайфер, дороги друзей расходятся.
+                          <p><a href="https://www.kinopoisk.ru/film/894027/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f9"><img src="assets/films/10-9.jpg" class="films"><p>9 часть- форсаж: Хоббс и Шоу</p></div>
+                <div class="modal fade" id="f9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">9 часть- форсаж: Хоббс и Шоут</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Люк Хоббс — американский элитный спецагент, он любит удобную спортивную одежду, большие пикапы и здоровое питание. Декард Шоу — британский пижон, бывший сотрудник разведки, предпочитает дорогие костюмы, спортивные авто и пабы. Эти двое терпеть друг друга не могут, но если кто-то угрожает их семьям, они готовы пойти на всё. Даже на работу в команде.
+                          <p><a href="https://www.kinopoisk.ru/film/1044450/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fil btn btn-primary" data-bs-toggle="modal" data-bs-target="#f10"><img src="assets/films/9.jpg" class="films"><p>10 часть - форсаж 9: вселенная форсаж</p></div>
+                <div class="modal fade" id="f10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">10 часть - форсаж 9: вселенная форсаж</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Доминик Торетто ведет спокойную жизнь в глуши вместе с Летти и сыном Брайаном, но опасность всегда где-то рядом. Команде приходится снова собраться, чтобы спасти Мистера Никто после крушения самолёта, на котором перевозили пойманную хакершу Сайфер. На месте аварии команда обнаруживает загадочное устройство и вскоре сталкивается с опасным преступником и самым безбашенным водителем из всех, с кем они имели дело. Ситуация усложняется тем, что этот человек — брат Доминика Джейкоб, которого много лет назад изгнали из семьи.
+                          <p><a href="https://www.kinopoisk.ru/film/964318/" target="_blank">посмотреть</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </section>
 
-        <section><hr><a href="https://vk.com/standoffer64" target="_blank"><img class="socicon vk" src="assets/footer/vk.png" /></a>
-            <a href="https://web.telegram.org/z/#5797948571" target="_blank"><img class="socicon tg" src="assets/footer/telegram.png" /></a>
-            </section>
+        
     </main>
     <footer>
+      <section><hr><a href="https://vk.com/standoffer64" target="_blank"><img class="socicon vk" src="assets/footer/vk.png" /></a>
+        <a href="https://web.telegram.org/z/#5797948571" target="_blank"><img class="socicon tg" src="assets/footer/telegram.png" /></a>
+        </section>
     </footer>
 </body>
 </html>

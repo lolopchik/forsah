@@ -6,10 +6,4 @@ button.addEventListener(`click`, function() {
 
 
 
-let ludiNode = document.querySelector(`.ludi`);
-let filNode = document.querySelector(`.ludi`);
-let gameNode = document.querySelector(`.ludi`);
-let musiNode = document.querySelector(`.ludi`);
 
-
-l

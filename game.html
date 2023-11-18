@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>игры форсаж</title>
-    <link rel="stylesheet" href="css/game.css">
     <link rel="icon" href="favicon.ico">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="css/game.css" >
 </head>
 <body>
     <header>
@@ -14,6 +17,8 @@
             <a href="films.html">фильмы</a>
             <a href="game.html">игры</a>
             <a href="music.html">музыка</a>
+            <button id="svet">поменять тему</button>
+
         </div>
     </header>
     <main>
@@ -21,17 +26,128 @@
         <section>
             <h1>игры</h1><hr>
             <div class="games">
-                <div class="game"><img src="assets/game/1.jpg" class="gam"><p>Fast & Furious Crossroads</p></div>
-                <div class="game"><img src="assets/game/2.jpeg" class="gam"><p>Fast & Furious: Showdown</p></div>
-                <div class="game"><img src="assets/game/3.jpg" class="gam"><p>Fast & Furious Spy Racers</p></div>
-                <div class="game"><img src="assets/game/4.jpg" class="gam"><p>Fast & Furious: Legacy</p></div>
-                <div class="game"><img src="assets/game/5.jpg" class="gam"><p>The Fast and The Furious: Fugitive</p></div>
-                <div class="game"><img src="assets/game/6.jpeg" class="gam"><p>The Fast and the Furious: Pink Slip 3D</p></div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g1"><img src="assets/game/1.jpg" class="gam"><p>Fast & Furious Crossroads</p></div>
+                <div class="modal fade" id="g1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fast & Furious Crossroads</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки
+                          <p><a href="https://stoigr.com/gonki-games/9571-fast-furious-crossroads.html" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g2"><img src="assets/game/2.jpeg" class="gam"><p>Fast & Furious: Showdown</p></div>
+                <div class="modal fade" id="g2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fast & Furious: Showdown</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки
+                          <p><a href="https://stoigr.com/arkady-games/4534-fast-furious-showdown.html" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g3"><img src="assets/game/3.jpg" class="gam"><p>Fast & Furious Spy Racers</p></div>
+                <div class="modal fade" id="g3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fast & Furious Spy Racers</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки
+                          <p><a href="https://stoigr.com/gonki-games/11002-fast-furious-spy-racers-rise-of-sh1ft3r-torrent.html" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g4"><img src="assets/game/4.jpg" class="gam"><p>Fast & Furious: Legacy</p></div>
+                <div class="modal fade" id="g4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fast & Furious: Legacy</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки
+                          <p><a href="https://trashbox.ru/link/forsazh-nasledie-android" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g5"><img src="assets/game/5.jpg" class="gam"><p>The Fast and The Furious: Fugitive</p></div>
+                <div class="modal fade" id="g5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">The Fast and The Furious: Fugitive</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки(за безопасность данной скачаной игры не отвечаю)
+                          <p><a href="https://www.mobygames.com/game/28111/the-fast-and-the-furious-fugitive/" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="game btn btn-primary" data-bs-toggle="modal" data-bs-target="#g6"><img src="assets/game/6.jpeg" class="gam"><p>The Fast and the Furious: Pink Slip 3D</p></div>
+                <div class="modal fade" id="g6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">The Fast and the Furious: Pink Slip 3D</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          гонки
+                          <p><a href="https://trashbox.ru/link/the-fast-and-the-furious-pink-slip-3d-java" target="_blank">скачать</a></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
+        
+    </main>
+    <footer>
         <section><hr><a href="https://vk.com/standoffer64" target="_blank"><img class="socicon vk" src="assets/footer/vk.png" /></a>
             <a href="https://web.telegram.org/z/#5797948571" target="_blank"><img class="socicon tg" src="assets/footer/telegram.png" /></a>
             </section>
-    </main>
+    </footer>
 </body>
 </html>
