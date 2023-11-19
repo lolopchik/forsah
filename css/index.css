@@ -36,6 +36,7 @@ h1 {
   border-radius: 20px;
   background-color: slategrey;
   color:black;
+  
 }
 .lol {
   margin-bottom: 50px;
@@ -61,6 +62,7 @@ nav {
   border: 3px solid rgb(0, 255, 234);
   border-radius: 20px;
   background-color: blueviolet;
+  
 }
 .gam {
   height: 200px;
@@ -79,6 +81,7 @@ nav {
   border: 3px solid rgb(157, 255, 0);
   border-radius: 20px;
   background-color: rgb(255, 63, 121);
+  outline: 5px solid rgb(157, 255, 0) ;
 }
 .music {
   display: flex;
@@ -91,6 +94,7 @@ nav {
   border: 3px solid rgb(255, 72, 0);
   border-radius: 20px;
   background-color: rgb(0, 255, 21);
+  outline: 5px solid rgb(255, 72, 0) ;
 }
 .mus {
   height: 200px;
@@ -125,6 +129,18 @@ footer {
   border: 3px solid rgb(0, 255, 55);
   background-color: rgb(209, 1, 140);
   cursor: pointer;
+}
+
+
+.ludi:focus-visible{
+  outline: 5px solid rgb(128, 0, 0) ;
+}
+.fil:focus-visible{outline: 5px solid rgb(255, 0, 0) ;}
+.game:focus-visible{
+  outline: 5px solid rgb(255, 0, 0) ;
+}
+.musi:focus-visible{
+  outline: 5px solid rgb(255, 0, 0) ;
 }
 
 .socicon {

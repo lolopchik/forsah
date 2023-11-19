@@ -144,6 +144,16 @@ footer {
 a {
   color: red;
 }
+.ludi:focus-visible{
+  outline: 5px solid rgb(128, 0, 0) ;
+}
+.fil:focus-visible{outline: 5px solid rgb(255, 0, 0) ;}
+.game:focus-visible{
+  outline: 5px solid rgb(255, 0, 0) ;
+}
+.musi:focus-visible{
+  outline: 5px solid rgb(255, 0, 0) ;
+}
 
 @media  (max-width: 375px) {
  .lol {
